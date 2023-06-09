@@ -1,8 +1,10 @@
 import "./App.css";
+import Homepage from "./components/Homepage.js";
+import React from "react";
 
 function App() {
-  return <div className="font-bold text-red-900">
-    <h1 className="text-4xl">Hello World</h1>
+  return <div>
+    <Homepage />
   </div>;
 }
 
