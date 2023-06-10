@@ -20,7 +20,6 @@ function App() {
             <Topic />
           </Route>
           <Route path="/quiz" exact>
-            
             <Quiz />
           </Route>
         </Switch>
