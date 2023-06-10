@@ -1,7 +1,8 @@
 import React from "react";
 import Icon_header from "../assets/Icon_Header.svg";
 import { Dropdown, initTE } from "tw-elements";
-
+import { Route } from "react-router-dom";
+import Homepage from "./Homepage";
 class Navbar extends React.Component{
     
     componentDidMount() {
@@ -288,7 +289,7 @@ class Navbar extends React.Component{
 
 	</div>
 	<div class="bg-white w-1/4 h-full flex items-center justify-center">
-		<button class="bg-orange-500 p-4 rounded-3xl text-white justify-center align-center ">Đăng nhập</button>
+		<Link to={Homepage} class="bg-orange-500 p-4 rounded-3xl text-white justify-center align-center ">Đăng nhập</Link>
 		
 	</div>
 </div>
