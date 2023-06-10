@@ -124,15 +124,15 @@ function Navbar() {
         {isLoggedIn ? (
           <>
             <div
-              class="bg-orange-500 p-3 rounded-3xl text-white justify-center align-center "
+              class="bg-orange-500 p-3 rounded-3xl text-white justify-center align-center px-3"
               onClick={handleShowLogout}>
               <p>Welcome, {userEmail}</p>
             </div>
             {showLogout ? (
               <button
-                class="bg-white-500 p-3 rounded-3xl text-black justify-center align-center "
+                class="bg-orange-500 p-3 rounded-3xl text-white justify-center align-center px-3"
                 onClick={handleLogout}>
-                Log out
+                Đăng xuất
               </button>
             ) : (
               <></>
