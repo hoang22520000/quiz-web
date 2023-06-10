@@ -3,7 +3,7 @@ import Homepage from "./components/Homepage.js";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Topic from "./components/pages/Topic";
-
+import Quiz from "./components/pages/Quiz";
 function App() {
   return (
     <div>
@@ -14,6 +14,10 @@ function App() {
           </Route>
           <Route path="/topic" exact>
             <Topic />
+          </Route>
+          <Route path="/quiz" exact>
+            
+            <Quiz />
           </Route>
         </Switch>
       </BrowserRouter>

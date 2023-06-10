@@ -4,6 +4,8 @@ import Facebook from "../assets/Facebook.png"
 import Navbar from "./Navbar";
 class Login extends React.Component{
 
+    
+
     render(){
         return <div>
             <Navbar/>
@@ -17,7 +19,7 @@ class Login extends React.Component{
                 <p class="mx-6">Password</p>
                 <input type="password" placeholder="********" class="mx-6 border-black border rounded-lg h-[45px] placeholder:px-2" required />
                 <router-link to="/" class="mx-6">
-                    <button class="bg-orange-400 text-white w-full h-[45px] rounded-lg mt-4">Đăng nhập</button>
+                    <button class="bg-orange-400 text-white w-full h-[45px] rounded-lg mt-4" >Đăng nhập</button>
                 </router-link>
                 <div class="flex bg-[#1877f2]">
                     <img src={Facebook} class="mt-4 mx-6"/>
