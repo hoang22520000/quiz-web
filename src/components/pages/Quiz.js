@@ -35,12 +35,12 @@ export default function Quiz() {
   }
   return (
     <div>
-      <div class="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Modal />
-        <div class="p-3 py-5 bg-white rounded-lg shadow-xl w-11/12 max-w-[800px]">
-          <p class="text-right text-green-600 pb-2 text-lg">Câu {index + 1}/{questions.length}</p>
-          <h1 class="text-3xl font-medium text-center"  >{question}</h1>
-          <div class="grid grid-cols-1 my-5 space-y-2 place-content-center">
+        <div className="p-3 py-5 bg-white rounded-lg shadow-xl w-11/12 max-w-[800px]">
+          <p className="text-right text-green-600 pb-2 text-lg">Câu {index + 1}/{questions.length}</p>
+          <h1 className="text-3xl font-medium text-center"  >{question}</h1>
+          <div className="grid grid-cols-1 my-5 space-y-2 place-content-center">
           {answers.map((answer, index) => {
               return (
                 <button
@@ -54,8 +54,8 @@ export default function Quiz() {
           
           </div>
 
-          <div class="flex justify-center pt-4">
-            <button class="py-2 px-7 text-medium flex rounded-lg text-white bg-yellow-600 hover:bg-green-700" onClick={nextQuestion}>Câu hỏi tiếp theo</button>
+          <div className="flex justify-center pt-4">
+            <button className="py-2 px-7 text-medium flex rounded-lg text-white bg-yellow-600 hover:bg-green-700" onClick={nextQuestion}>Câu hỏi tiếp theo</button>
           </div>
       </div>
     </div>
