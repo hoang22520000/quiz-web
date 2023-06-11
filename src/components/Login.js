@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post("http://localhost:3006/users/login", { email, password });
-      // Xử lý logic sau khi đăng nhập thành công, ví dụ chuyển hướng trang, lưu thông tin người dùng vào local storage, vv.
+      // Xử lý logic sau khi đăng nhập thành công
       console.log(response);
       const token = response.data.token;
       const user = response.data.user.email;
@@ -24,7 +24,7 @@ function Login() {
 
       history.push("/");
     } catch (error) {
-      // Xử lý lỗi đăng nhập, ví dụ hiển thị thông báo lỗi
+      // Xử lý lỗi đăng nhập
       console.error(error);
     }
   };
